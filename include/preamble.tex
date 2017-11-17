@@ -5,18 +5,21 @@
 \input{include/other}
 
 \begin{document}
-\assignpagestyle{\chapter}{style2}
-\pagestyle{empty}
+%\assignpagestyle{\chapter}{style2}
+
 \title{KETIKA SEPATU PAS}
 %\subtitle{Pembicaraan diberikan 1972\\
 %          Seri ceramah Inggris}
 \date{Tanggal Terjemah\\
       \today}
-\maketitle
-
+\maketitle\thispagestyle{empty}
+\pagestyle{empty}
+\tableofcontents
+\fancychapterstyle
 
 \pagestyle{mystyle}
 \pagenumbering{arabic} % Roman numerals
 \setcounter{page}{1}
 \ifdefined\theHchapter\else\newcommand\theHchapter{\arabic{chapter}}\fi
+
 
