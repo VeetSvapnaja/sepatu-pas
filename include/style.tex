@@ -1,0 +1,44 @@
+\usepackage[pagestyles,extramarks]{titlesec}
+%% \titleformat{\chapter}[display]
+%% {\bfseries\Large}
+%% {\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+%% {10ex}
+%% {\titlerule
+%%   \vspace{2ex}%
+%%   \filleft}
+%% [\vspace{2ex}
+%% \titlerule]
+
+
+\titleformat{\chapter}[hang]{\filleft\bfseries\large}{\MakeUppercase{\chaptertitlename\hspace{.5pt}\thechapter}}{.5em}{}[\vspace{2ex}\titlerule \small Diterjemahkan dan diedit oleh team OSHO Indonesia. Fb/ig/twitter/pinterest: @oshoindonesia. Web: www.oshoindonesia.com \\ \vspace{5ex}\titlerule]
+
+%% \titleformat{\chapter}[display]
+%% {\normalfont\Large\filcenter\sffamily}
+%% {\titlerule[1pt]
+%% \vspace{1pt}
+%% \titlerule
+%% \vspace{1pc}
+%% {Diterjemahkan dan diedit oleh team OSHO Indonesia. Fb/ig/twitter/pinterest: @oshoindonesia. Web: www.oshoindonesia.com}
+%% {1pc}
+%% {\titlerule
+%% \vspace{1pc}
+%% \Huge}
+
+
+\settitlemarks*{chapter,section}
+
+\newpagestyle{mystyle}{
+  \setheadrule{.1pt}
+  \sethead
+  [\textbf{\chaptername\hspace{.5pt}\thechapter. \chaptertitle}]
+  [][]
+  {\textbf{\chaptername\hspace{.5pt}\thechapter. \chaptertitle}}{}{}
+  \renewcommand{\makefootrule}{\rule[0.9\baselineskip]{\linewidth}{0.1pt}}%
+%  \setfootrule{.1pt}
+  \setfoot[\textbf{}][\thepage][OSHO]{\textbf{Buku Hikmat}}{\thepage}{OSHO}
+}
+
+\newpagestyle{style2}{
+  \renewcommand{\makefootrule}{\rule[0.9\baselineskip]{\linewidth}{0.1pt}}%
+  \setfoot[][\thepage][OSHO]{}{\thepage}{OSHO}
+}
